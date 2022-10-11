@@ -1,8 +1,16 @@
 import React from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
+import { toast } from 'react-toastify';
 
 const Quiz = ({ quize }) => {
-    const { question } = quize;
+    const { question, correctAnswer } = quize;
+
+    
+    const clickIcon = (correctAnswer) =>{
+        toast.success  (correctAnswer, {autoClose: 2000, theme:'dark'})
+    }
+
+
     return (
         <div>
             <div className="max-w-lg p-4 shadow-md mx-auto bg-emerald-400 dark:text-gray-100 my-9 rounded">
@@ -11,7 +19,7 @@ const Quiz = ({ quize }) => {
                         <p><b>Question:</b> {question}</p>
                     </div>
                     <div>
-                        <EyeIcon className="h-6 w-6 text-blue-500" />
+                        <EyeIcon onClick={() => clickIcon(correctAnswer)} className="h-6 w-6 text-blue-500" />
 
                     </div>
                 </div>
