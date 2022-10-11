@@ -3,8 +3,6 @@ import { useLoaderData } from 'react-router-dom';
 import Content from '../Content/Content';
 import './Topic.css'
 
-
-
 const Topic = () => {
     const topics = useLoaderData();
     return (
