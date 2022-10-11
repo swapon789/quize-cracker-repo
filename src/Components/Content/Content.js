@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Content.css'
 
 const Content = ({ topic }) => {
-    const { logo, name, total } = topic;
+    const {id, logo, name, total } = topic;
     return (
         <div className='content-item'>
             <div className=" rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 bg-black">
@@ -12,7 +13,7 @@ const Content = ({ topic }) => {
                         <p className="text-2xl font-semibold tracking-wide text-white">Name:{name}</p>
                         <p className="text-white">Total:{total}</p>
                     </div>
-                    <button type="button" className=" bg-sky-400 hover:bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Read more</button>
+                    <Link to={`/question/${id}`}><button type="button" className=" bg-sky-400 hover:bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Read more</button></Link>
                 </div>
             </div>
         </div>
