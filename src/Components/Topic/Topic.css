@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+.topic {
+    background-image: url('../../images/picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+   
+    
+}
+.topic h1{
+    font-size: 60px;
+    font-family: 'Alkalami', serif;
+    margin: 20px;
+    padding-top: 150px;
+    color: blueviolet;
+    padding-left: 90px;
+    
+
+}
