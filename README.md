@@ -4,17 +4,17 @@ This project was bootstrapped with [Content Quiz App](http://localhost:3001).
 
 ## Description
 
-> At first Rect-router Dom insstal and then CreatBroweser and import RouterProvider
-> Insstal Tailwind css Then creat a Components and creat other childrean components 
-> Create some Link in Header component and the Header components import into Main components
-> Then setup all the Component navLink create path into RouterBrouser
-> Create Loader into Router Browser and fetch API link for useLoader 
-> Then Create a dynamic map and use  destructuring for data showing on the website
-> Insstal heroicons then use it and insstal toastify use the website
-> Create a error page for showing data not found an error page
-> Insstall rechart and use it in a stastic page 
-> Create question page into blog page and showing some Question 
-> Setup favicon
+1. At first Rect-router Dom insstal and then CreatBroweser and import RouterProvider
+2. Insstal Tailwind css Then creat a Components and creat other childrean components 
+3. Create some Link in Header component and the Header components import into Main components
+4. Then setup all the Component navLink create path into RouterBrouser
+5. Create Loader into Router Browser and fetch API link for useLoader 
+6. Then Create a dynamic map and use  destructuring for data showing on the website
+7. Insstal heroicons then use it and insstal toastify use the website
+8. Create a error page for showing data not found an error page
+9. Insstall rechart and use it in a stastic page 
+10. Create question page into blog page and showing some Question 
+11. Setup favicon
 
 ### `npm start`
 
