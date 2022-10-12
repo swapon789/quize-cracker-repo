@@ -1,10 +1,20 @@
-# Getting Started with Content Quiz app
+# Started with Content Quiz app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Content Quiz App](http://localhost:3001).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+> At first Rect-router Dom insstal and then CreatBroweser and import RouterProvider
+> Insstal Tailwind css Then creat a Components and creat other childrean components 
+> Create some Link in Header component and the Header components import into Main components
+> Then setup all the Component navLink create path into RouterBrouser
+> Create Loader into Router Browser and fetch API link for useLoader 
+> Then Create a dynamic map and use  destructuring for data showing on the website
+> Insstal heroicons then use it and insstal toastify use the website
+> Create a error page for showing data not found an error page
+> Insstall rechart and use it in a stastic page 
+> Create question page into blog page and showing some Question 
+> Setup favicon
 
 ### `npm start`
 
