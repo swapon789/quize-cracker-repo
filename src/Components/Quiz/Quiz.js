@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { toast } from 'react-toastify';
 
@@ -9,6 +9,7 @@ const Quiz = ({ quize }) => {
     const clickIcon = (correctAnswer) =>{
         toast.success  (correctAnswer, {autoClose: 2000, theme:'dark'})
     }
+    const select = useId();
 
     const correctAns = (options) => {
         if (correctAnswer === options){
@@ -33,23 +34,23 @@ const Quiz = ({ quize }) => {
                 </div>
                 <div className="space-y-4  grid items-baseline grid-cols-2">
                     <div onChange={() => correctAns(options[0])} className='border border-blue-700 p-2 m-3 rounded'>
-                        <input type="radio" name="java" id="q1" />
-                        <label className='ml-3' for="q1">{quize.options[0] ? quize.options[0] : 'Undifined'}</label><br></br>
+                        <input className='cursor-pointer' type="radio" name="java" id={select + 'first'} />
+                        <label className='ml-3 cursor-pointer' for={select + 'first'}>{quize.options[0] ? quize.options[0] : 'Undifined'}</label><br></br>
 
                     </div>
                     <div onChange={() => correctAns(options[1])} className='border border-blue-700 p-2 m-3 rounded'>
-                        <input type="radio" name="java" id="q2" />
-                        <label className='ml-3' for="q2">{quize.options[1] ? quize.options[1] : 'Undifined'}</label><br></br>
+                        <input className='cursor-pointer' type="radio" name="java" id={select + 'second'} />
+                        <label className='ml-3 cursor-pointer' for={select + 'second'}>{quize.options[1] ? quize.options[1] : 'Undifined'}</label><br></br>
 
                     </div>
                     <div onChange={() => correctAns(options[2])} className='border border-blue-700 p-2 m-3 rounded'>
-                        <input type="radio" name="java" id="q3" />
-                        <label className='ml-3' for="q3">{quize.options[2] ? quize.options[2] : 'Undifined'}</label><br></br>
+                        <input className='cursor-pointer' type="radio" name="java" id={select + 'third'} />
+                        <label className='ml-3 cursor-pointer' for={select + 'third'}>{quize.options[2] ? quize.options[2] : 'Undifined'}</label><br></br>
 
                     </div>
                     <div onChange={() => correctAns(options[3])} className='border border-blue-700 p-2 m-3 rounded'>
-                        <input type="radio" name="java" id="q4" />
-                        <label className='ml-3' for="q4">{quize.options[3] ? quize.options[3] : 'Undifined'}</label><br></br>
+                        <input className='cursor-pointer' type="radio" name="java" id={select + 'fourth'} />
+                        <label className='ml-3 cursor-pointer' for={select + 'fourth'}>{quize.options[3] ? quize.options[3] : 'Undifined'}</label><br></br>
 
                     </div>
 

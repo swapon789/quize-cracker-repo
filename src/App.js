@@ -21,14 +21,14 @@ function App() {
           element: <Topic></Topic>
         },
         {
-          path: '/topic',
+          path: '/home',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Topic></Topic>
         },
         {
-          path: '/question/:questionId',
+          path: '/topic/:topicId',
           loader: async ({ params }) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.questionId}`)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
           },
           element: <Question></Question>
         },

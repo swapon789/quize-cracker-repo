@@ -13,7 +13,7 @@ const Content = ({ topic }) => {
                         <p className="text-2xl font-semibold tracking-wide text-white">Name:{name}</p>
                         <p className="text-white">Total:{total}</p>
                     </div>
-                    <Link to={`/question/${id}`}><button type="button" className=" bg-sky-400 hover:bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Start Now</button></Link>
+                    <Link to={`/topic/${id}`}><button type="button" className=" bg-sky-400 hover:bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Start Now</button></Link>
                 </div>
             </div>
         </div>

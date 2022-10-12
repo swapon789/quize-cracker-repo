@@ -24,22 +24,22 @@ const Header = () => {
                     <ul className='flex items-center hidden space-x-8 lg:flex'>
                         <li>
                             <Link
-                                to='/topic'
+                                to='/home'
                                 aria-label='Home'
                                 title='Home'
                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
-                                Topic
+                                Home
                             </Link>
                         </li>
                         <li>
                             <Link
-                                to='/question'
+                                to='/'
                                 aria-label='Shop'
                                 title='Shop'
                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
-                                Question
+                                Topic
                             </Link>
                         </li>
                         <li>
@@ -122,12 +122,22 @@ const Header = () => {
                                         <ul className='space-y-4'>
                                             <li>
                                                 <Link
-                                                    to='/topics'
+                                                    to='/home'
                                                     aria-label='Shop'
                                                     title='Shop'
                                                     className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
-                                                    Topics
+                                                    Home
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to='/'
+                                                    aria-label='Cart'
+                                                    title='Cart'
+                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    <p> Topic</p>
                                                 </Link>
                                             </li>
                                             <li>
