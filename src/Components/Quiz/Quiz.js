@@ -22,7 +22,7 @@ const Quiz = ({ quize }) => {
 
     return (
         <div>
-            <div className="max-w-lg p-4 shadow-md mx-auto bg-emerald-400 dark:text-gray-100 my-9 rounded">
+            <div className="max-w-lg p-4 shadow-md mx-auto bg-emerald-400 text-white my-9 rounded">
                 <div className="flex justify-between pb-4 border-bottom">
                     <div className="flex items-center">
                         <p><b>Question:</b> {question}</p>

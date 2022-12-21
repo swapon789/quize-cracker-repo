@@ -9,8 +9,8 @@ const Question = () => {
 
     return (
         <div>
-            <div className=' bg-green-300 py-9'>
-                <h4 className='text-center text-3xl fw-bold pt-3'>Question Of {name}</h4>
+            <div data-theme="night" className='py-9'>
+                <h4 className='text-center text-white text-3xl fw-bold pt-3'>Question Of {name}</h4>
 
                 <div>
                     {

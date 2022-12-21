@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img from '../../images/log1 (1).svg'
+import img from '../../images/question-mark-310100_960_720.webp'
 import './Header.css'
 
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <nav className='bg-pink-300'>
+        <nav data-theme="black" className='text-white'>
             <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 '>
                 <div className='relative flex items-center justify-between'>
                     <Link
@@ -16,8 +16,8 @@ const Header = () => {
                         title='Smart Home'
                         className='inline-flex items-center'
                     >
-                        <img src={img} alt="" />
-                        <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+                        <img src={img} alt="" className='w-10' />
+                        <span className='ml-2 text-xl font-bold tracking-wide text-white uppercase'>
                             Question Quiz
                         </span>
                     </Link>
@@ -27,7 +27,7 @@ const Header = () => {
                                 to='/home'
                                 aria-label='Home'
                                 title='Home'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                                 Home
                             </Link>
@@ -37,7 +37,7 @@ const Header = () => {
                                 to='/'
                                 aria-label='Shop'
                                 title='Shop'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                                 Topic
                             </Link>
@@ -47,7 +47,7 @@ const Header = () => {
                                 to='/stastic'
                                 aria-label='Cart'
                                 title='Cart'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                                 <p> Stastic</p>
                             </Link>
@@ -57,7 +57,7 @@ const Header = () => {
                                 to='/blog'
                                 aria-label='About Us'
                                 title='About Us'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className='font-medium tracking-wide text-whitetransition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                                 Blog
                             </Link>
@@ -86,8 +86,8 @@ const Header = () => {
                             </svg>
                         </button>
                         {isMenuOpen && (
-                            <div className='absolute top-0 left-0 w-full'>
-                                <div className='p-5 bg-white border rounded shadow-sm'>
+                            <div className='absolute top-0 left-0 w-full bg-blue'>
+                                <div className='p-5 border rounded shadow-sm'>
                                     <div className='flex items-center justify-between mb-4'>
                                         <div>
                                             <Link
@@ -96,8 +96,8 @@ const Header = () => {
                                                 title='Company'
                                                 className='inline-flex items-center'
                                             >
-                                                <img src={img} alt="" />
-                                                <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+                                                <img src={img} alt="" className='w-10' />
+                                                <span className='ml-2 text-xl font-bold tracking-wide text-white uppercase'>
                                                    Question Quiz
                                                 </span>
                                             </Link>
@@ -125,7 +125,7 @@ const Header = () => {
                                                     to='/home'
                                                     aria-label='Shop'
                                                     title='Shop'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     Home
                                                 </Link>
@@ -135,7 +135,7 @@ const Header = () => {
                                                     to='/'
                                                     aria-label='Cart'
                                                     title='Cart'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     <p> Topic</p>
                                                 </Link>
@@ -145,7 +145,7 @@ const Header = () => {
                                                     to='/statistics'
                                                     aria-label='Cart'
                                                     title='Cart'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     <p> Statistics</p>
                                                 </Link>
@@ -155,7 +155,7 @@ const Header = () => {
                                                     to='/blog'
                                                     aria-label='About Us'
                                                     title='About Us'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     Blog
                                                 </Link>
